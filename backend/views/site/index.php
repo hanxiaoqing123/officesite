@@ -2,52 +2,65 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = '汇师网后台管理系统';
+\backend\assets\SiteAsset::register($this);
 ?>
-<div class="site-index">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 illu" style="width:23%">
+            <dl>
+                <dt>我的个人信息</dt>
+                <dd>
+                    <ul>
+                        <li>你好，<?=$model->username?></li>
+                        <li>上次登录时间：<?=$model->last_login?></li>
+                        <li>上次登录IP：<?=$model->last_ip?> </li>
+                    </ul>
+                </dd>
+            </dl>
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
         </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 illu"  style="width:23%">
+            <dl>
+                <dt>信息统计</dt>
+                <dd>
+                    <ul>
+                        <li>通知公告总数：9篇</li>
+                        <li>上传文件总数：20个</li>
+                        <li>在线调研问卷：15篇</li>
 
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 illu"  style="width:23%">
+            <dl>
+                <dt>系统信息</dt>
+                <dd>
+                    <ul>
+                        <li>程序版本：V1.0 [20170527]</li>
+                        <li>操作系统：CentOS Linux release 7.3.1611</li>
+                        <li>web服务器软件：Nginx1.12.0</li>
+                        <li>MySQL 版本：5.6.36</li>
+                        <li>PHP 版本：5.6.30</li>
+                        <li>上传文件：2M</li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 illu"  style="width:23%">
+            <dl>
+                <dt>网站信息</dt>
+                <dd>
+                    <ul>
+                        <li>版权所有：成都大术光年信息技术有限公司</li>
+                        <li>官方网站：http://www.grandmagic.cn</li>
+                        <!--                        <li>官方论坛：http://bbs.xxx.com</li>-->
+                    </ul>
+                </dd>
+            </dl>
+        </div>
     </div>
+    <!-- 第一行结束 -->
+
 </div>
