@@ -19,6 +19,7 @@ return [
 //    'aliases' => [
 //        '@mdm/admin' => '@vendor/mdmsoft/yii2-admin',
 //    ],
+    //'as myBehavior2' => \backend\components\MyBehavior::className(),
     'components' => [
         'assetManager' => [
             'bundles' => [
